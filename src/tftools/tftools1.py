@@ -69,7 +69,7 @@ def adjust_data_size(data_dir):
 
 """# Model class
 
-Define MyModel class
+Define Model class
 """
 
 class Model:
@@ -314,7 +314,7 @@ class Model:
 
 		filename = None
 		if save_model:
-			model_name = mymodel.model_name
+			model_name = self.model_name
 			filename = "{}_{:.2f}_{:.2f}.h5".format(model_name, loss, accuracy)
 			model.save(filename) 
 

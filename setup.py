@@ -15,7 +15,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='tftools',  
-    version='0.0.0', 
+    version='0.0.2', 
     description='Basic tools for tensorflow ml',
     long_description=long_description, 
     long_description_content_type='text/markdown',
@@ -33,7 +33,7 @@ setup(
     package_dir={'': 'src'}, 
     packages=['tftools'],
     python_requires='>=3.5',
-    install_requires=['tensorflow', 'matplotlib', 'tqdm', 'opencv-python'],
+    install_requires=['tensorflow>=2', 'matplotlib', 'tqdm', 'opencv-python'],
     project_urls={  # Optional
         'Source': 'https://github.com/tygerlord/tftools/',
     },
