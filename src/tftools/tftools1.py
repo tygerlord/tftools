@@ -276,7 +276,7 @@ class Model:
 					if preprocessing_function is not None:
 						npimg2 = preprocessing_function(images[i], True)
 					else:
-						npimg2 = npimg.astype('uint8')
+						npimg2 = npimg2.astype('uint8')
 					save_img(str(destpath), npimg2)
 
 	def evaluate(self, data_dir: AnyStr, save_model: bool = False, **kwargs):
