@@ -397,7 +397,7 @@ class Model:
 		
 			if class_weight == 'auto':
 				# n_samples / (n_classes * count(y)
-				class_weight = { k: (total/(nb_classes * v)) for k,v in count_classes.items() }
+				class_weight = { k: ((1.0/v)*(total)/nb_classes) for k,v in count_classes.items() }
 
 				
 		print(class_weight)
