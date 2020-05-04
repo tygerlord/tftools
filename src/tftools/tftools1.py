@@ -33,8 +33,6 @@ from tqdm import tqdm
 
 import cv2
 
-__version__ = 1
-
 """# Balancing dir datas
 
 Balancing dir size
@@ -255,6 +253,8 @@ class Model:
 		print("{}/{} taux1={}%".format(good_results, total_results, taux1))
 
 		print("inv_categories={}".format(inv_categories))
+		
+		tf.print(tf.math.confusion_matrix(labels=all_categories, predictions=predicts, num_classes=len(categories)))
 		
 		#print(badtext)
 		
