@@ -1,3 +1,6 @@
+## DEPRECATED TOOL USE TENSORFLOW V2 ##
+
+
 # TFTOOLS
 
 Simple tools for image recognition with Tensorflow
